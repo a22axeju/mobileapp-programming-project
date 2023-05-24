@@ -3,6 +3,6 @@
 
 **Screenshots**
 
-![](DataPic.png)
+<img src="DataPic.png" width="25%"/>
 
-![](AboutPic.png)
+<img src="AboutPic.png" width="25%"/>
