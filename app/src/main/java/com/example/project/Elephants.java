@@ -1,21 +1,33 @@
 package com.example.project;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Elephants {
-
-    private double maximumWeight;
-    private double averageWeight;
-
+    @SerializedName("ID")
+    private String id;
+    @SerializedName("company")
+    private String weight;
+    @SerializedName("name")
     private String name;
+    @SerializedName("category")
+    private String height;
+    @SerializedName("auxdata")
+    private String info;
 
-    public Elephants(String name, String location, int height) {
+    public Elephants(String id, String info, String weight, String name, String height) {
+        this.id = id;
+        this.info = info;
+        this.weight = weight;
         this.name = name;
-        this.maximumWeight = maximumWeight;
-        this.averageWeight = averageWeight;
+        this.height = height;
     }
-    @Override
-    public String toString() {
-        return "Name: '" + name + '\'' +
-                ", maximumWeight '" + maximumWeight + '\'' +
-                ", averageWeight " + averageWeight;
+
+    public String getElephants() {
+        return "Species: " + id +
+                "\nName: " + name +
+                "\nWeight: " + weight +
+                "\nheight: " + height +
+                "\ninfo: " + info;
     }
+
 }
